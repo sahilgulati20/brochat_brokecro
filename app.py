@@ -30,7 +30,7 @@ llm = ChatGoogleGenerativeAI(
 )
 
 # ------------------- Health Check -------------------
-target_server = "https://monitor-server-8kgp.onrender.com/health"
+target_server = "https://server-monitor-o5oj.onrender.com/health"
 
 def check_health_loop():
     while True:
