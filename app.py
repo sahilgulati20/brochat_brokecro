@@ -42,7 +42,7 @@ def check_health_loop():
                 print(f"[⚠️ Issue] {target_server} returned {res.status_code} at {time.strftime('%H:%M:%S')}")
         except Exception as e:
             print(f"[❌ Down] {target_server} at {time.strftime('%H:%M:%S')} - {e}")
-        time.sleep(3)  # check every 3 seconds
+        time.sleep(600)  # check every 10 minutes
 
 # Run health check in a separate background thread
 threading.Thread(target=check_health_loop, daemon=True).start()
